@@ -20,7 +20,9 @@ export default function Component() {
 						</Link>
 						<p className="text-sm font-medium text-gray-500 md:grid md:gap-2 dark:text-gray-400">
 							by
-							<Link className="text-gray-900 underline dark:text-gray-50 group-hover:underline" href="#">
+							<Link
+								className="text-gray-900 underline dark:text-gray-50 group-hover:underline"
+								href="#">
 								@jina
 							</Link>{" "}
 							<time dateTime="2023-10-10">- 10/10/2023</time>
@@ -35,7 +37,9 @@ export default function Component() {
 						</Link>
 						<p className="text-sm font-medium text-gray-500 md:grid md:gap-2 dark:text-gray-400">
 							by
-							<Link className="text-gray-900 underline dark:text-gray-50 group-hover:underline" href="#">
+							<Link
+								className="text-gray-900 underline dark:text-gray-50 group-hover:underline"
+								href="#">
 								@zach
 							</Link>{" "}
 							<time dateTime="2023-09-15">- 09/15/2023</time>
@@ -50,7 +54,9 @@ export default function Component() {
 						</Link>
 						<p className="text-sm font-medium text-gray-500 md:grid md:gap-2 dark:text-gray-400">
 							by
-							<Link className="text-gray-900 underline dark:text-gray-50 group-hover:underline" href="#">
+							<Link
+								className="text-gray-900 underline dark:text-gray-50 group-hover:underline"
+								href="#">
 								@cindy
 							</Link>{" "}
 							<time dateTime="2023-08-24">- 08/24/2023</time>
@@ -65,7 +71,9 @@ export default function Component() {
 						</Link>
 						<p className="text-sm font-medium text-gray-500 md:grid md:gap-2 dark:text-gray-400">
 							by
-							<Link className="text-gray-900 underline dark:text-gray-50 group-hover:underline" href="#">
+							<Link
+								className="text-gray-900 underline dark:text-gray-50 group-hover:underline"
+								href="#">
 								@alex
 							</Link>{" "}
 							<time dateTime="2023-07-19">- 07/19/2023</time>
