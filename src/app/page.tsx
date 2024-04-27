@@ -3,7 +3,10 @@ import { createClient } from "@/prismicio";
 
 export default async function Component() {
 	const prismicClient = createClient();
-	const posts = await prismicClient.getAllByType("blog_post");
+	const posts = await prismicClient.getAllByType("blog_post").catch(e => {
+		console.error(e);
+		return [];
+	});
 
 	return (
 		<div className="grid gap-6 lg:gap-8">
