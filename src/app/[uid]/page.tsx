@@ -9,13 +9,13 @@ import "./styles.scss";
 
 interface BlogPostProps {
 	params: {
-		slug: string;
+		uid: string;
 	};
 }
 
 export default async function BlogPost({ params }: BlogPostProps) {
 	const prismicClient = createClient();
-	const post = await prismicClient.getByUID("blog_post", params.slug).catch(() => notFound());
+	const post = await prismicClient.getByUID("blog_post", params.uid).catch(() => notFound());
 
 	return (
 		<div className="flex flex-col gap-4" id="blogPost">
