@@ -6,6 +6,7 @@ import { CircleArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import "./styles.scss";
+import { getTimeToReadAPost } from "@/utils/Post";
 
 interface BlogPostProps {
 	params: {
@@ -16,6 +17,8 @@ interface BlogPostProps {
 export default async function BlogPost({ params }: BlogPostProps) {
 	const prismicClient = createClient();
 	const post = await prismicClient.getByUID("blog_post", params.uid).catch(() => notFound());
+
+	const timeToRead = getTimeToReadAPost(post);
 
 	return (
 		<div className="flex flex-col gap-4" id="blogPost">
@@ -30,7 +33,8 @@ export default async function BlogPost({ params }: BlogPostProps) {
 				<PrismicImage field={post.data.banner} />
 				<section>
 					{post.data.author} - Criado em{" "}
-					{dayjs(post.first_publication_date).format("DD/MM/YYYY")}
+					{dayjs(post.first_publication_date).format("DD/MM/YYYY")} - {timeToRead} min. de
+					leitura
 				</section>
 			</header>
 			<hr />
