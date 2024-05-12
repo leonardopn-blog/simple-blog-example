@@ -6,7 +6,12 @@ Esse repositório foi feito para o tutorial de como iniciar um blog pessoal util
 
 ### Principal
 
-[🗞️ Criando um blog com Next 14 e Prismic CMS](https://leonardopetta.dev/blog/criando-um-blog-com-next14-e-prismic-cms)
+[Como Implementar um Estimador de Tempo de Leitura em Suas Postagens](https://www.leonardopetta.dev/blog/como-implementar-um-estimador-de-tempo-de-leitura-em-suas-postagens)
+
+#### Postagens em ordem de lançamento (desc)
+
+1. [Como Implementar um Estimador de Tempo de Leitura em Suas Postagens](https://www.leonardopetta.dev/blog/como-implementar-um-estimador-de-tempo-de-leitura-em-suas-postagens)
+2. [🗞️ Criando um blog com Next 14 e Prismic CMS](https://www.leonardopetta.dev/blog/criando-um-blog-com-next14-e-prismic-cms)
 
 ## Como rodar a aplicação
 
